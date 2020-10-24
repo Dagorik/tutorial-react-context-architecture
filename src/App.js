@@ -8,6 +8,9 @@ import Login from './Scenes/Login'
 function App() {
   return (
     <div className="App">
+      {/* <ProfileProvider>
+        <Profile />
+      </ProfileProvider> */}
       <AuthProvider>
         <Login />
       </AuthProvider>
