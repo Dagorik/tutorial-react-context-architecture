@@ -10,3 +10,18 @@ export const getProfile = () => {
       }, 3000);
     });
 };
+
+
+export const login = (email, password) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (password === 'dagorik') {
+        resolve({
+          token: 'token de juguete',
+        });
+      } else {
+       reject('Contraseña incorrecta') 
+      }
+    }, 3000);
+  });
+};
