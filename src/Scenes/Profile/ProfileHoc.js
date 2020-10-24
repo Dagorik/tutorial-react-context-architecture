@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {useProfile} from '../../Context/ProfileContext';
 
-export default (Profile) => function Profilehoc() {
+export default (Profile) => function ProfileHoc() {
     const [{ profile, isFetching, isError, }, { getProfile}] = useProfile();
 
     useEffect(() => {
